@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hexagon Wave | Saturn Atmospherics</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #131b2e;
+      --accent: #fbbf24;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: #1e293b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    nav {
+      background: rgba(19, 27, 46, 0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    nav .brand { font-weight: 700; color: var(--accent); letter-spacing: 1px; }
+    nav ul { display: flex; list-style: none; gap: 1.5rem; }
+    nav a { color: var(--text); text-decoration: none; font-size: 0.95rem; }
+    nav a:hover, nav a.active { color: var(--accent); }
+    main { max-width: 800px; margin: 3rem auto; padding: 0 2rem; }
+    h1 { font-size: 2.2rem; color: #fff; margin-bottom: 0.5rem; }
+    .meta { color: var(--accent); font-weight: 600; margin-bottom: 2rem; }
+    section { margin-bottom: 2.5rem; }
+    h2 { color: #fff; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    p { margin-bottom: 1rem; color: var(--muted); }
+    blockquote {
+      background: var(--card-bg);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 4rem;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="brand">🪐 SATURN ATMOSPHERICS</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hexagon.html" class="active">The Polar Hexagon</a></li>
+      <li><a href="logs.html">Observation Logs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>The North Polar Hexagon</h1>
+    <div class="meta">Fluid Dynamics & Wave Mechanics</div>
+
+    <section>
+      <h2>Discovery & Dimensions</h2>
+      <p>First discovered by the Voyager mission in 1981 and later imaged in high resolution by the Cassini spacecraft, the hexagonal wave pattern centered over Saturn's north pole spans roughly 30,000 km (19,000 mi) across.</p>
+      <p>Each of the six sides measures approximately 14,500 km (9,000 mi) in length—wider than the diameter of Earth itself. The entire structure rotates with a period of 10 hours, 39 minutes, matching the radio emission rate of Saturn's interior.</p>
+    </section>
+
+    <section>
+      <h2>Mechanics of the Standing Wave</h2>
+      <p>Laboratory models simulate this phenomenon using rotating tanks of fluid. When a central core of fluid rotates at a different speed than the surrounding fluid, a shear boundary forms. At specific velocity gradients, Rossby waves lock into stationary geometric polygons.</p>
+      <blockquote>
+        The hexagon is essentially a meandering jet stream moving at ~320 km/h (200 mph) that forms a stable, six-sided standing wave pattern.
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>Seasonal Color Shifts</h2>
+      <p>Between 2012 and 2016, observations showed the hexagon shifting from a bluish hue to a deep golden color. This transition is attributed to increased photochemical haze produced as the northern hemisphere turned toward sunlight during summer solstice.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Chronicles of Saturn Atmospheric Project &bull; Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
