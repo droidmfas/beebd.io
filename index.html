@@ -3,87 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Website</title>
+  <title>Chronicles of Saturn | Atmospheric Research</title>
   <style>
     :root {
-      --bg: #0f172a;
-      --card-bg: #1e293b;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --accent: #38bdf8;
+      --bg: #090d16;
+      --card-bg: #131b2e;
+      --accent: #fbbf24;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: #1e293b;
     }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: system-ui, -apple-system, sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.7;
+    }
+    nav {
+      background: rgba(19, 27, 46, 0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      min-height: 100vh;
-      padding: 20px;
+      position: sticky;
+      top: 0;
     }
-
-    .card {
-      background-color: var(--card-bg);
-      border-radius: 12px;
-      padding: 40px;
-      max-width: 500px;
-      width: 100%;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    nav .brand { font-weight: 700; color: var(--accent); letter-spacing: 1px; }
+    nav ul { display: flex; list-style: none; gap: 1.5rem; }
+    nav a { color: var(--text); text-decoration: none; font-size: 0.95rem; }
+    nav a:hover, nav a.active { color: var(--accent); }
+    header {
+      padding: 5rem 2rem;
       text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
     }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      color: var(--text);
+    header h1 { font-size: 2.8rem; margin-bottom: 1rem; color: #fff; }
+    header p { font-size: 1.2rem; color: var(--muted); }
+    main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
     }
-
-    p.subtitle {
-      color: var(--accent);
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-
-    p.bio {
-      color: var(--text-muted);
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: var(--accent);
-      color: #0f172a;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: opacity 0.2s;
-    }
-
-    .btn:hover {
-      opacity: 0.9;
+    .card h3 { color: var(--accent); margin-bottom: 0.5rem; }
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 4rem;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
 
-  <main class="card">
-    <h1>Hello, I'm Alex 👋</h1>
-    <p class="subtitle">Web Developer & Creator</p>
-    <p class="bio">
-      Welcome to my personal site hosted on GitHub Pages! I love building cool web projects and learning new tech.
-    </p>
-    <a href="https://github.com" class="btn" target="_blank" rel="noopener">Check out my GitHub</a>
+  <nav>
+    <div class="brand">🪐 SATURN ATMOSPHERICS</div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="hexagon.html">The Polar Hexagon</a></li>
+      <li><a href="logs.html">Observation Logs</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>The Ringed Giant's Atmosphere</h1>
+    <p>Exploring the dynamic storm systems, jet streams, and fluid mechanics of Saturn's upper atmosphere.</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <div class="card">
+        <h3>Zonal Jet Streams</h3>
+        <p>Saturn boasts equatorial winds reaching velocities up to 1,800 km/h (1,100 mph), making them among the fastest atmospheric currents in the Solar System.</p>
+      </div>
+      <div class="card">
+        <h3>Great White Spots</h3>
+        <p>Occurring roughly once every 30 Earth years, these massive planetary-scale storms erupt violently into the upper troposphere, encircling the globe.</p>
+      </div>
+      <div class="card">
+        <h3>Polar Vortices</h3>
+        <p>Both poles host long-lived cyclonic systems with distinct eye-walls, reminiscent of terrestrial hurricanes on a massive cosmic scale.</p>
+      </div>
+    </div>
   </main>
+
+  <footer>
+    <p>Chronicles of Saturn Atmospheric Project &bull; Hosted on GitHub Pages</p>
+  </footer>
 
 </body>
 </html>
